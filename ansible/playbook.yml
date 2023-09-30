@@ -1,0 +1,9 @@
+---
+- name: yocto-box
+  hosts: all
+  become: yes
+  roles: 
+    - base
+  vars:
+    yocto_dir: /home/vagrant/poky
+    bb_dir: /home/vagrant/bb
